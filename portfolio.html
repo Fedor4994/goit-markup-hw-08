@@ -40,12 +40,18 @@
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-open-button" type="button" data-menu-open>
+          <svg class="mobile-menu-open-button__icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="contact page-header__contact list">
           <li>
             <a class="contact__email link" href="mailto:info@devstudio.com"
               ><svg width="16" height="12" class="contact__icon">
-                <use href="./images/sprite.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li>
@@ -57,11 +63,59 @@
           </li>
         </ul>
       </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-button" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class=" mobile-menu__link link" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link_current link" href="#">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__contact list">
+          <li>
+            <a class="mobile-menu__phone-number link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a class="mobile-menu__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__social list">
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
       <!-- HERO -->
-      <div class="container">
+      <!-- <div class="container">
         <h1 class="visually-hidden">Портфолио</h1>
         <ul class="filters-buttons list container__filters-buttons">
           <li class="filters-buttons__item">
@@ -79,10 +133,10 @@
           <li class="filters-buttons__item">
             <button class="filters-buttons__btn" type="button">Маркетинг</button>
           </li>
-        </ul>
+        </ul> -->
         <!-- OUR PROLECTS -->
 
-        <ul class="projects-list list container__projects-list">
+        <!-- <ul class="projects-list list container__projects-list">
           <li class="projects-list__item">
             <a class="projects-list__link link" href="">
               <div class="projects-list__img-wrapper">
@@ -290,9 +344,9 @@
           <div class="footer__left">
             <a class="logo link footer__logo" href="" lang="en"
               >Web<span class="logo_theme_light">Studio</span></a
-            >
+            > -->
             <!-- CONTACT INFORMATION -->
-            <address>
+            <!-- <address>
               <ul class="contact-list list contact-list__container">
                 <li class="contact-list__item">
                   <a
@@ -388,6 +442,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
