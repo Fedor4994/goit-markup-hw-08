@@ -1,46 +1,92 @@
 .stydio-hero__container {
-    padding-top: 200px;
-    padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .stydio-hero__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 30px;
-    text-align: center;
-}
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  /* or 162% */
 
-.stydio-hero {
-    background-color: #c4c4c4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/shapka.jpg');
-    background-size: cover;
-    background-position: initial;
-    background-repeat: no-repeat;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 .modal-btn {
-    min-width: 200px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    /* identical to box height, or 188% */
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    background: var(--accent-color);
-    box-shadow: 0px 4px 4px var(--color-title);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 10px 32px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px var(--color-title);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stydio-hero {
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('/images/shapka-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .stydio-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/shapka-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .stydio-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/shapka-tablet.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .stydio-hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('/images/shapka-tablet@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stydio-hero__container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .stydio-hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
+  .stydio-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/shapka-desktop.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .stydio-hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('/images/shapka-desktop@2x.jpg');
+    }
+  }
 }

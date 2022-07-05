@@ -39,6 +39,7 @@
 
 @media screen and (min-width: 768px) {
   .page-header {
+    padding-top: 0;
     padding-bottom: 0;
   }
 
@@ -82,7 +83,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: var(--primary-font);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -118,7 +118,6 @@
   .contact__email {
     display: flex;
     align-items: center;
-    font-family: var(--primary-font);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -153,7 +152,6 @@
   .contact__phone-number {
     display: flex;
     align-items: center;
-    font-family: var(--primary-font);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
