@@ -189,33 +189,66 @@
           <h2 class="portfolio__title">Чем мы занимаемся</h2>
           <ul class="portfolio-gallery portfolio__portfolio-gallery list">
             <li class="portfolio-gallery__item">
-              <img
-                class="portfolio-gallery__img"
-                src="./images/work/desktop-apps.jpg"
-                alt="Процесс работы за ноутбуком"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/work/desktop-apps.webp 1x, ./images/work/desktop-apps@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/work/desktop-apps.jpg 1x, ./images/work/desktop-apps@2x.jpg 2x"
+                />
+                <img
+                  class="portfolio-gallery__img"
+                  src="./images/work/desktop-apps.jpg"
+                  alt="Процесс работы за ноутбуком"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="portfolio-gallery__overlay">Десктопные приложения</p>
             </li>
             <li class="portfolio-gallery__item">
-              <img
-                class="portfolio-gallery__img"
-                src="./images/work/design-solutions.jpg"
-                alt="Процесс работы за ноутбуком"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/design-solutions.webp    1x,
+                    ./images/work/design-solutions@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/design-solutions.jpg    1x,
+                    ./images/work/design-solutions@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="portfolio-gallery__img"
+                  src="./images/work/design-solutions.jpg"
+                  alt="Процесс работы за ноутбуком"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="portfolio-gallery__overlay">Мобильные приложения</p>
             </li>
             <li class="portfolio-gallery__item">
-              <img
-                class="portfolio-gallery__img"
-                src="./images/work/mobile-apps.jpg"
-                alt="Процесс работы на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/work/mobile-apps.webp 1x, ./images/work/mobile-apps@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/work/mobile-apps.jpg 1x, ./images/work/mobile-apps@2x.jpg 2x"
+                />
+                <img
+                  class="portfolio-gallery__img"
+                  src="./images/work/mobile-apps.jpg"
+                  alt="Процесс работы на планшете"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="portfolio-gallery__overlay">Дизайнерские решения</p>
             </li>
           </ul>
@@ -229,13 +262,55 @@
           <h2 class="employees__title">Наша команда</h2>
           <ul class="employees list our-team__employees">
             <li class="employees__card">
-              <img
-                class="employees__photo"
-                src="./images/worker1.jpg"
-                alt="наш сотрудник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/demian-desktop.webp    1x,
+                    ./images/team/demian-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/demian-desktop.jpg    1x,
+                    ./images/team/demian-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/demian-tablet.webp    1x,
+                    ./images/team/demian-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/demian-tablet.jpg 1x, ./images/team/demian-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/demian-mobile.webp    1x,
+                    ./images/team/demian-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/demian-mobile.jpg 1x, ./images/team/demian-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="employees__photo"
+                  src="./images/team/demian-desktop.jpg"
+                  alt="наш сотрудник"
+                />
+              </picture>
+
               <div class="employees__card-content">
                 <h3 class="employees__name">Игорь Демьяненко</h3>
                 <p class="employees__position">Product Designer</p>
@@ -272,13 +347,55 @@
               </div>
             </li>
             <li class="employees__card">
-              <img
-                class="employees__photo"
-                src="./images/worker2.jpg"
-                alt="наш сотрудник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/repina-desktop.webp    1x,
+                    ./images/team/repina-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/repina-desktop.jpg    1x,
+                    ./images/team/repina-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/repina-tablet.webp    1x,
+                    ./images/team/repina-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/repina-tablet.jpg 1x, ./images/team/repina-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/repina-mobile.webp    1x,
+                    ./images/team/repina-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/repina-mobile.jpg 1x, ./images/team/repina-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="employees__photo"
+                  src="./images/team/repina-desktop.jpg"
+                  alt="наш сотрудник"
+                />
+              </picture>
               <div class="employees__card-content">
                 <h3 class="employees__name">Ольга Репина</h3>
                 <p class="employees__position">Frontend Developer</p>
@@ -315,13 +432,60 @@
               </div>
             </li>
             <li class="employees__card">
-              <img
-                class="employees__photo"
-                src="./images/worker3.jpg"
-                alt="наш сотрудник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/tarasov-desktop.webp    1x,
+                    ./images/team/tarasov-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tarasov-desktop.jpg    1x,
+                    ./images/team/tarasov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tarasov-tablet.webp    1x,
+                    ./images/team/tarasov-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tarasov-tablet.jpg    1x,
+                    ./images/team/tarasov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tarasov-mobile.webp    1x,
+                    ./images/team/tarasov-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tarasov-mobile.jpg    1x,
+                    ./images/team/tarasov-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="employees__photo"
+                  src="./images/team/tarasov-desktop.jpg"
+                  alt="наш сотрудник"
+                />
+              </picture>
               <div class="employees__card-content">
                 <h3 class="employees__name">Николай Тарасов</h3>
                 <p class="employees__position">Marketing</p>
@@ -358,13 +522,61 @@
               </div>
             </li>
             <li class="employees__card">
-              <img
-                class="employees__photo"
-                src="./images/worker4.jpg"
-                alt="наш сотрудник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/ermakov-desktop.webp    1x,
+                    ./images/team/ermakov-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/ermakov-desktop.jpg    1x,
+                    ./images/team/ermakov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/ermakov-tablet.webp    1x,
+                    ./images/team/ermakov-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/ermakov-tablet.jpg    1x,
+                    ./images/team/ermakov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/ermakov-mobile.webp    1x,
+                    ./images/team/ermakov-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/ermakov-mobile.jpg    1x,
+                    ./images/team/ermakov-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="employees__photo"
+                  src="./images/team/ermakov-desktop.jpg"
+                  alt="наш сотрудник"
+                />
+              </picture>
               <div class="employees__card-content">
                 <h3 class="employees__name">Михаил Ермаков</h3>
                 <p class="employees__position">UI Designer</p>
@@ -407,7 +619,7 @@
 
     <!-- OUR CLIENTS -->
 
-    <!-- <section class="our-clients">
+    <section class="our-clients">
       <div class="container our-clients__container">
         <h2 class="our-clients__title">Постоянные клиенты</h2>
         <ul class="our-clients__list list">
@@ -455,20 +667,20 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- FOOTER -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__contact">
           <div class="footer__left">
             <a class="logo link footer__logo" href="" lang="en"
               >Web<span class="logo_theme_light">Studio</span></a
-            > -->
+            >
 
-    <!-- CONTACT INFORMATION -->
-    <!-- <address>
+            <!-- CONTACT INFORMATION -->
+            <address>
               <ul class="contact-list list contact-list__container">
                 <li class="contact-list__item">
                   <a
@@ -564,7 +776,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
