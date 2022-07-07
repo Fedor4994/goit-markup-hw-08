@@ -65,52 +65,55 @@
       </div>
 
       <div class="mobile-menu" data-menu>
-         <div class="container mobile-menu__container">
-            <button type="button" class="mobile-menu__close-button" data-menu-close>
-                <svg class="mobile-menu__close-icon" width="40" height="40">
-                  <use href="./images/sprite.svg#icon-close-black"></use>
-                </svg>
-            </button>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-button" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link_current link" href="№">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Контакты</a>
+            </li>
+          </ul>
 
-            <ul class="mobile-menu__list list">
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link mobile-menu__link_current link" href="№">Студия</a>
+          <div class="mobile-menu__bottom">
+            <ul class="mobile-menu__contact list">
+              <li>
+                <a class="mobile-menu__phone-number link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link link" href="#">Контакты</a>
+              <li>
+                <a class="mobile-menu__email link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
 
-            <ul class="mobile-menu__contact list">
-              <li>
-            <a class="mobile-menu__phone-number link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-          <li>
-            <a class="mobile-menu__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          
-        </ul>
-
-        <ul class="mobile-menu__social list">
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link link" href="#">Instagram</a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link link" href="#">Twitter</a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link link" href="#">Facebook</a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link link" href="#">LinkedIn</a>
-            </li>
-          </ul>
+            <ul class="mobile-menu__social list">
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="#">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="#">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="#">Facebook</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="#">LinkedIn</a>
+              </li>
+            </ul>
           </div>
+        </div>
       </div>
-
     </header>
     <main>
       <!-- HERO -->
@@ -181,14 +184,14 @@
 
       <!-- PORTFOLIO -->
 
-      <!-- <section class="portfolio">
+      <section class="portfolio">
         <div class="container">
           <h2 class="portfolio__title">Чем мы занимаемся</h2>
           <ul class="portfolio-gallery portfolio__portfolio-gallery list">
             <li class="portfolio-gallery__item">
               <img
                 class="portfolio-gallery__img"
-                src="./images/work1.jpg"
+                src="./images/work/desktop-apps.jpg"
                 alt="Процесс работы за ноутбуком"
                 width="370"
                 height="294"
@@ -198,7 +201,7 @@
             <li class="portfolio-gallery__item">
               <img
                 class="portfolio-gallery__img"
-                src="./images/work2.jpg"
+                src="./images/work/design-solutions.jpg"
                 alt="Процесс работы за ноутбуком"
                 width="370"
                 height="294"
@@ -208,7 +211,7 @@
             <li class="portfolio-gallery__item">
               <img
                 class="portfolio-gallery__img"
-                src="./images/work3.jpg"
+                src="./images/work/mobile-apps.jpg"
                 alt="Процесс работы на планшете"
                 width="370"
                 height="294"
@@ -217,11 +220,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- OUR TEAM -->
 
-      <!-- <section class="our-team">
+      <section class="our-team">
         <div class="container">
           <h2 class="employees__title">Наша команда</h2>
           <ul class="employees list our-team__employees">
@@ -400,7 +403,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- OUR CLIENTS -->
 
@@ -464,8 +467,8 @@
               >Web<span class="logo_theme_light">Studio</span></a
             > -->
 
-            <!-- CONTACT INFORMATION -->
-            <!-- <address>
+    <!-- CONTACT INFORMATION -->
+    <!-- <address>
               <ul class="contact-list list contact-list__container">
                 <li class="contact-list__item">
                   <a

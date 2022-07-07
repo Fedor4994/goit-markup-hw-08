@@ -20,6 +20,10 @@
 }
 
 .mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   position: relative;
   padding-left: 40px;
   padding-top: 48px;
@@ -71,8 +75,7 @@
 }
 
 .mobile-menu__contact {
-  padding-top: 302px;
-  padding-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 .mobile-menu__email {
