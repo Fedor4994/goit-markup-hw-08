@@ -120,7 +120,6 @@ body {
 }
 
 .mobile-menu__link {
-  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -146,7 +145,6 @@ body {
 }
 
 .mobile-menu__email {
-  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -155,12 +153,9 @@ body {
 }
 
 .mobile-menu__phone-number {
-  font-family: var(--primary-font);
   display: block;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
-  /* identical to box height */
+  font-size: calc(28px + 6 * (100vw - 320px) / 447);
   letter-spacing: 0.02em;
   margin-bottom: 32px;
   color: var(--accent-color);
@@ -172,11 +167,8 @@ body {
 }
 
 .mobile-menu__social-link {
-  font-family: var(--primary-font);
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  /* identical to box height, or 122% */
+  font-size: calc(12px + 10 * (100vw - 320px) / 447);
   letter-spacing: 0.02em;
   color: var(--accent-color);
   padding-left: 10px;
@@ -208,6 +200,11 @@ body {
   margin-right: 93px;
 }
 
+@media screen and (max-width: 767px) {
+  .header__logo {
+    margin-right: 0;
+  }
+}
 .logo_theme_dark {
   color: #000;
 }

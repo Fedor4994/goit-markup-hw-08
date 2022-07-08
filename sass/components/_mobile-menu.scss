@@ -50,7 +50,6 @@
 }
 
 .mobile-menu__link {
-  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -79,7 +78,6 @@
 }
 
 .mobile-menu__email {
-  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -89,12 +87,9 @@
 }
 
 .mobile-menu__phone-number {
-  font-family: var(--primary-font);
   display: block;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
-  /* identical to box height */
+  font-size: calc(28px + (34 - 28) * (100vw - 320px) / (767 - 320));
   letter-spacing: 0.02em;
 
   margin-bottom: 32px;
@@ -107,11 +102,8 @@
 }
 
 .mobile-menu__social-link {
-  font-family: var(--primary-font);
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  /* identical to box height, or 122% */
+  font-size: calc(12px + (22 - 12) * (100vw - 320px) / (767 - 320));
 
   letter-spacing: 0.02em;
 
