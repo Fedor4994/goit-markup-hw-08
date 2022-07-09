@@ -1,40 +1,50 @@
 .container__filters-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
-
-.filters-buttons__item:not(:last-child) {
-    margin-right: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  padding-top: 60px;
+  margin-bottom: 40px;
 }
 
 .filters-buttons__btn {
-    border: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    /* identical to box height, or 162% */
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
 
-    text-align: center;
-    letter-spacing: 0.03em;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    color: var(--color-title);
-    background: #f5f4fa;
-    cursor: pointer;
+  color: var(--color-title);
+  background: #f5f4fa;
+  cursor: pointer;
 
-    padding: 6px 22px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,
-        &:focus {
-                color: #ffffff;
-                background-color: var(--accent-color);
-            }
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .container__filters-buttons {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__filters-buttons {
+    padding-top: 94px;
+    margin-bottom: 50px;
+  }
+}
