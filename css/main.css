@@ -235,8 +235,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 94%;
+  height: 609px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -266,16 +266,26 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .contact-form {
   display: flex;
   flex-direction: column;
 }
 
 .contact-form__text {
-  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-title);
@@ -324,7 +334,7 @@ body {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 16px 12px;
+  padding: 12px 16px;
   height: 120px;
   resize: none;
   margin-bottom: 20px;
@@ -341,7 +351,6 @@ body {
 
 .contact-form__field-key {
   display: block;
-  font-family: var(--primary-font);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -373,29 +382,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--primary-font);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  margin-bottom: 30px;
-  /* identical to box height, or 171% */
+  font-size: 12px;
+  line-height: 1.16;
+  margin-bottom: 31px;
   letter-spacing: 0.03em;
   color: #757575;
 }
 .contact-form__policy-text::before {
   content: "";
   display: block;
-  cursor: pointer;
-  margin-right: 7px;
   width: 16px;
   height: 15px;
-  background-image: url(../images/check-box.svg);
+  margin-right: 8px;
+  border: 2px solid var(--color-title);
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .contact-form__checkbox:checked + .contact-form__policy-text::before {
   background-image: url(../images/icon-check.svg);
+  border: none;
 }
 
+.contact-form__checkbox-link {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form__text {
+    line-height: 1.15;
+  }
+
+  .contact-form__policy-text {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 30px;
+  }
+}
 .menu {
   display: none;
 }
